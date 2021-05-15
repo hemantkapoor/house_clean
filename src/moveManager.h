@@ -17,6 +17,7 @@ public:
     MoveManager(ros::NodeHandle* nodeHandler);
     bool moveStraight(double speed, float distance, bool forward=true);
     bool rotate(double angleSpeed, float angle, bool clockwise=true);
+    bool spiralMtion(float linearSpeed, float angularSpeed);
     bool gotoPosition(float x, float y);
 private:
     ros::NodeHandle* m_nodeHandle = nullptr;
